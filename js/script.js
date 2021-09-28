@@ -3,8 +3,7 @@
 function start() {
   // Création de l'objet apiWeather
   const city = document.getElementById("city-input").value;
-  console.log(city);
-  const apiWeather = new API_WEATHER();
+  const apiWeather = new API_WEATHER(city);
   // Appel de la fonction fetchTodayForecast
 
   apiWeather
